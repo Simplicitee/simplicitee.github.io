@@ -1,0 +1,15 @@
+.large-container {
+	background-color: #111111;
+}
+
+.jumbotron {
+	background-color: #333333;
+	margin-top: 40px;
+}
+
+.page-title {
+	font-size: 20px;
+	font-family: "Lucida Console", "Lucida Console", monospace;
+	font-weight: bold;
+	color: #474747;
+}
