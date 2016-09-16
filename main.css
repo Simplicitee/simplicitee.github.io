@@ -13,3 +13,8 @@
 	font-weight: bold;
 	color: #474747;
 }
+
+.navbar-default {
+  background-color: #1F1F1F;
+  border-color: #000000;
+}
