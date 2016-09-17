@@ -7,9 +7,14 @@
 	margin-top: 40px;
 	margin-left: 60px;
 	margin-right: 60px;
+	border-radius: 25px;
 }
 
 .navbar-default {
  	background-color: #1F1F1F;
   	border-color: #000000;
+}
+
+.page-header {
+	margin-left: 60px;
 }
