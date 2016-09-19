@@ -20,3 +20,7 @@ body {
  	background-color: #1F1F1F;
   	border-color: #000000;
 }
+
+.nav-highlight {
+	background-color: #f231b2;
+}
