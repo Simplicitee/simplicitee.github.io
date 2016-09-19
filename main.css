@@ -1,3 +1,9 @@
+body {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 60px;
+}
+
 .large-container {
 	background-color: #ffffff;
 }
@@ -13,8 +19,4 @@
 .navbar-default {
  	background-color: #1F1F1F;
   	border-color: #000000;
-}
-
-.page-header {
-	margin-right: 60px;
 }
