@@ -1,12 +1,10 @@
 .container {
 	background-color: #a1c310;
 	margin: auto;
-	position: fixed;
 }
 
 .information {
 	margin: auto;
-	position: fixed;
 	border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
