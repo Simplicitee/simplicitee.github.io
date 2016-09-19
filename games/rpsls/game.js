@@ -11,14 +11,7 @@
 // 1 = tie
 // 2 = lose
 // 3 = win
-
-main = function() {
-	$(".btn").onclick(function() {
-		var number = $(this).id;
-		runGame(number);
-	});
-}
-
+//====================
 runGame = function(id) {
 	var computer = getComputer();
 	var result;
@@ -86,6 +79,3 @@ var getChoice = function(number) {
 	
 	return number;
 }
-
-
-document.ready(main());
