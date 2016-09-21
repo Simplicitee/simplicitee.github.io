@@ -1,12 +1,12 @@
 .container {
-	background-color: #a1c310;
+	background-color: #fe8966;
 	margin: auto;
 }
 
 .information {
 	border-top-style: dotted;
-    border-right-style: solid;
-    border-bottom-style: dotted;
-    border-left-style: solid;
-    border-width: 5px;
+	border-right-style: solid;
+    	border-bottom-style: dotted;
+    	border-left-style: solid;
+    	border-width: 5px;
 }
