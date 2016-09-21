@@ -1,5 +1,6 @@
 .large-container {
 	background-color: #ffffff;
+	padding: 24px;
 }
 
 .jumbotron {
@@ -8,14 +9,14 @@
 	margin-left: 60px;
 	margin-right: 60px;
 	border-radius: 25px;
+	padding: 24px;
 }
 
 .navbar-default {
- 	background-color: #1F1F1F;
-  	border-color: #000000;
+ 	background-color: ##fe8966;
 }
 
 .nav-highlight {
-	background-color: #46ef67;
+	background-color: ##fe8966;
 	border-radius: 3px;
 }
