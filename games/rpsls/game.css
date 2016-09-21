@@ -4,7 +4,7 @@ body {
 
 .container {
 	margin: auto;
-	padding: auto;
+	padding: 100px, 48px, 100px, 48px;
 }
 
 .information {
