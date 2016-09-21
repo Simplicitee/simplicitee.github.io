@@ -1,3 +1,4 @@
+//---- Rock Paper Scissors Lizard Spock ----
 // # = Name - Beats
 //-----------------
 // 1 = Rock - 3, 4
