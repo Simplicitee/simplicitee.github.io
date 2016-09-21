@@ -18,31 +18,31 @@ runGame = function(id) {
 	if (id === computer) {
 		result = 1;
 	} else if (id === 1) {
-		if (id === 2 || id === 5) {
+		if (computer === 2 || computer === 5) {
 			result = 2;
 		} else {
 			result = 3;
 		}
 	} else if (id === 2) {
-		if (id === 3 || id === 4) {
+		if (computer === 3 || computer === 4) {
 			result = 2;
 		} else {
 			result = 3;
 		}
 	} else if (id === 3) {
-		if (id === 1 || id === 5) {
+		if (computer === 1 || computer === 5) {
 			result = 2;
 		} else {
 			result = 3;
 		}
 	} else if (id === 4) {
-		if (id === 1 || id === 3) {
+		if (computer === 1 || computer === 3) {
 			result = 2;
 		} else {
 			result = 3;
 		}
 	} else if (id === 5) {
-		if (id === 2 || id === 4) {
+		if (computer === 2 || computer === 4) {
 			result = 2;
 		} else {
 			result = 3;
