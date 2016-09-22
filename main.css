@@ -20,6 +20,20 @@
 	background-color: #fe8966;
 }
 
+.simpicon {
+	height: 50%;
+	width: 50%;
+	border-radius: 50%;
+	float: left;
+}
+
+.img-box {
+	margin-top: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-right: 50px;
+}
+
 footer {
 	padding: 24px;
 }
