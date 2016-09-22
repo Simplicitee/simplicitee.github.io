@@ -1,13 +1,13 @@
 .large-container {
 	background-color: #ffffff;
-	padding: 15%;
+	padding: 7.5%;
 }
 
 .jumbotron {
 	background-color: #c2c2c2;
 	margin: auto;
 	border-radius: 25px;
-	padding: 10%;
+	padding: 5%;
 }
 
 .navbar-default {
@@ -31,5 +31,5 @@
 }
 
 footer {
-	padding: 15%;
+	padding: 7.5%;
 }
