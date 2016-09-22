@@ -22,12 +22,11 @@
 	height: 10%;
 	width: 10%;
 	border-radius: 50%;
-	float: left;
 }
 
 .img-box {
 	margin: auto;
-	padding: 15%;
+	padding: 5%;
 }
 
 footer {
