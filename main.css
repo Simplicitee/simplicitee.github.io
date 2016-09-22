@@ -5,11 +5,9 @@
 
 .jumbotron {
 	background-color: #c2c2c2;
-	margin-top: 66px;
-	margin-left: 60px;
-	margin-right: 60px;
+	margin: auto;
 	border-radius: 25px;
-	padding: 24px;
+	padding: 48px;
 }
 
 .navbar-default {
@@ -28,10 +26,7 @@
 }
 
 .img-box {
-	margin-top: auto;
-	margin-left: auto;
-	margin-bottom: auto;
-	margin-right: 50px;
+	margin: auto;
 }
 
 footer {
