@@ -11,7 +11,7 @@ body {
 .information {
 	border-style: solid;
     	border-width: 5px;
-    	border-radius: 10%;
+    	border-radius: 5%;
     	border-color: #ef3901;
     	padding: 2.5%;
     	margin-bottom: 10px;
@@ -21,5 +21,5 @@ body {
 .game-img {
 	height: 25%;
 	width: 25%;
-	margin-left: 40%;
+	margin-left: 25%;
 }
