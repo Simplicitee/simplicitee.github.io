@@ -17,11 +17,15 @@ newAnagram = function(var number) {
   }
   
   var input = prompt("Unscramble: " + word);
-  calculateAccuracy(input, correct);
+  calculateAccuracy(input, correct, word);
 };
             
-calculateAccuracy = function(var input, var word) {
+calculateAccuracy = function(var input, var word, var scramble) {
   if (input === word) {
     window.alert("You correctly unscrambled the word! +1 point!");
     return;
+  } else {
+    var input = prompt("Incorrect, retry: " + scramble);
+    calculateAccuracy(input, word, scramble);
+  }
 };
