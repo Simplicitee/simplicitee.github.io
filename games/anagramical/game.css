@@ -2,11 +2,17 @@ body {
   background-color: #9674fd; 
 }
 
-.counter {
-  text-align: center;
+.container {
+  margin: auto;
 }
 
-.container {
+.counter {
+  text-align: center;
+  background-color: #000;
+  border-radius: 6px;
+}
+
+.small-container {
   border-radius: 6px;
   border-width: 3px;
   border-color: #602cfc;
