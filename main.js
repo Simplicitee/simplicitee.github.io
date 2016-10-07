@@ -3,7 +3,8 @@ main = function() {
   if (percent === 100%) {
     document.getElementById("bar").style.width=0%;
   } else {
-    var p = percent+1%;
+    var p = parseFloat(percent) + 1;
+    p += "%";
     document.getElementById("bar").style.width=p;
   }
 };
