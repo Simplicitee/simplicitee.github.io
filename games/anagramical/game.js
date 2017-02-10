@@ -24,6 +24,9 @@ calculateAccuracy = function(input, word, scramble) {
     window.alert("You correctly unscrambled the word! +1 point!");
     addPoint();
     return;
+  } else if (input === null) {
+    resetScore();
+    return;
   } else {
     var input = prompt("Incorrect, retry: " + scramble);
     calculateAccuracy(input, word, scramble);
@@ -33,4 +36,8 @@ calculateAccuracy = function(input, word, scramble) {
 addPoint = function() {
   var val = $("points").text();
   $("points").text(val + 1);
+};
+
+resetScore = function() {
+  $("points").text(0);
 };
