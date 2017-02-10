@@ -1,7 +1,7 @@
 var easy = [{anagram: "gdo", word: "dog"}, {anagram: "pepla", word: "apple"}];
 var hard = [{anagram: "niofsucno", word: "confusion"}, {anagram: "tecabusfo", word: "obfuscate"}];
 
-newAnagram = function(var number) {
+newAnagram = function(number) {
   var rand;
   var word;
   var correct;
@@ -19,7 +19,7 @@ newAnagram = function(var number) {
   calculateAccuracy(input, correct, word);
 };
             
-calculateAccuracy = function(var input, var word, var scramble) {
+calculateAccuracy = function(input, word, scramble) {
   if (input === word) {
     window.alert("You correctly unscrambled the word! +1 point!");
     addPoint();
