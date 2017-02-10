@@ -11,6 +11,8 @@ body {
   text-align: center;
   background-color: #fff;
   border-radius: 6px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .small-container {
