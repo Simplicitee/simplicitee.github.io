@@ -33,10 +33,10 @@ calculateAccuracy = function(input, word, scramble) {
 };
 
 addPoint = function() {
-  var val = $("points").text();
-  $("points").text(val + 1);
+  var val = getElementById("points").innerHtml;
+  getElementById("points").innerHtml = (val + 1);
 };
 
 resetScore = function() {
-  $("points").text(0);
+  getElementById("points").innerHtml = (0);
 };
