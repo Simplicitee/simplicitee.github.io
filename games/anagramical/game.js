@@ -1,19 +1,18 @@
-var easy = [{anagram: "gdo", word: "dog"}, {anagram: "pepla", word: "apple"}];
-var hard = [{anagram: "niofsucno", word: "confusion"}, {anagram: "tecabusfo", word: "obfuscate"}];
+var easy = ["dog", "apple", "cat", "happy", "yolo", "sad", "love", "math", "art"];
+var hard = ["confusion", "obfuscate", "memorize", "pineapple", "intrigue", "birthday", "atmosphere"];
 
 newAnagram = function(number) {
-  var rand;
   var word;
   var correct;
+  var rand;
   if (number === 1) {
-    rand = 1;
-    word = easy.indexOf(rand).anagram;
-    correct = easy.indexOf(rand).word;
+    rand = Math.floor(Math.random()*easy.length);
+    correct = easy.indexOf(rand);
   } else if (number === 2) {
-    rand = 1;
-    word = hard.indexOf(rand).anagram;
-    correct = hard.indexOf(rand).word;
+    rand = Math.floor(Math.random()*hard.length);
+    correct = hard.indexOf(rand);
   }
+  word = scramble(correct);
   
   var input = prompt("Unscramble: " + word);
   calculateAccuracy(input, correct, word);
@@ -40,4 +39,8 @@ addPoint = function() {
 
 resetScore = function() {
   $("points").text(0);
+};
+
+var scramble = function(word) {
+  
 };
