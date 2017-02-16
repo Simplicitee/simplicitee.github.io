@@ -34,9 +34,9 @@ calculateAccuracy = function(input, word, scramble) {
 
 addPoint = function() {
   var val = getElementById("points").innerHtml;
-  document.getElementById("points").innerHtml = (val + 1);
+  document.getElementById("points").innerHtml = (new Number(val) + 1);
 };
 
 resetScore = function() {
-  document.getElementById("points").innerHtml = (0);
+  document.getElementById("points").innerHtml = 0;
 };
