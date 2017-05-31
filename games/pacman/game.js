@@ -1,7 +1,7 @@
 window.onload=function() {
   canv=document.getElementById("game");
   ctx=canv.getContext("2d");
-  document.addEventListener("keydown", keypress);
+  document.addEventListener("keydown", keyPush);
   setInterval(game, 1000/15);
 }
 
@@ -31,7 +31,7 @@ function game() {
 
   for (x=0; x<canv.width; x++) {
     for (y=0; y<canv.height; y++) {
-      if ((x==0 || x==canv.width) && (y==0 || y==canv.height)) {
+      if ((x==0 || x==canv.width) || (y==0 || y==canv.height)) {
         ctx.fillStyle="blue";
         ctx.fillRect(x*tc, y*tc, tc-2, tc-2);
         if (x==px && y==py) {
@@ -54,7 +54,7 @@ function reset() {
   vx=vy=0;
 }
 
-function keypress(evt) {
+function keyPush(evt) {
   switch(evt.keyCode) {
       case 37:
           xv=-1;
