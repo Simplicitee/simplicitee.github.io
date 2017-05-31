@@ -29,9 +29,9 @@ function game() {
     reset();
   }
 
-  for (x=0; x<canv.width; x++) {
-    for (y=0; y<canv.height; y++) {
-      if ((x==0 || x==canv.width) || (y==0 || y==canv.height)) {
+  for (var x=1; x<canv.width; x++) {
+    for (var y=1; y<canv.height; y++) {
+      if ((x==1 || x==canv.width-1) || (y==1 || y==canv.height-1)) {
         ctx.fillStyle="blue";
         ctx.fillRect(x*tc, y*tc, tc-2, tc-2);
         if (x==px && y==py) {
