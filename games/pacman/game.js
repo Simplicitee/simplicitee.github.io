@@ -1,6 +1,6 @@
 window.onload=function() {
-  c=document.getElementById("game");
-  ctx=c.getContext("2d");
+  canv=document.getElementById("game");
+  ctx=canv.getContext("2d");
   document.addEventListener("keydown", keypress);
   setInterval(game, 1000/15);
 }
@@ -34,7 +34,7 @@ function game() {
       if ((x==0 || x==canv.width) && (y==0 || y==canv.height)) {
         ctx.fillStyle="blue";
         ctx.fillRect(x*tc, y*tc, tc-2, tc-2);
-        if (border[i].x==px && border[i].y==py) {
+        if (x==px && y==py) {
           reset();
         }
       }
