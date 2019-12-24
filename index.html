@@ -47,10 +47,116 @@
 	</nav>
 
 	<div class="large-container" style="">
-		<div class="jumbotron">
-			<h1>Bulletin Board</h1>
-			<p>Hey I made a new website, Yay for me. This one looks a lot better I think.
-		</div>
+		<iframe id="canvas_frame" class="preview-frame" aria-label="sketch output" role="main" title="sketch preview" sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms allow-modals" srcdoc="<!DOCTYPE HTML>
+<html><head>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js&quot; crossorigin=&quot;&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js&quot; crossorigin=&quot;&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js&quot; crossorigin=&quot;&quot;></script>
+    
+    <meta charset=&quot;utf-8&quot;>
+
+  <base href=&quot;https://editor.p5js.org/Simplicitee/sketches/YV8RaiypP/&quot;><style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+</style><script src=&quot;/previewScripts.js&quot;></script><script>
+    function getScriptOff(line) {
+      var offs = [[55,&quot;sketch&quot;]];
+      var l = 0;
+      var file = '';
+      for (var i=0; i<offs.length; i++) {
+        var n = offs[i][0];
+        if (n < line &amp;&amp; n > l) {
+          l = n;
+          file = offs[i][1];
+        }
+      }
+      return [line - l, file];
+    }
+    // catch reference errors, via http://stackoverflow.com/a/12747364/2994108
+    window.onerror = function (msg, url, lineNumber, columnNo, error) {
+        var string = msg.toLowerCase();
+        var substring = &quot;script error&quot;;
+        var data = {};
+        if (url.match(/^(http:\/\/|https:\/\/)/) !== null &amp;&amp; error.stack){
+          var errorNum = error.stack.split('about:srcdoc:')[1].split(':')[0];
+          var fileInfo = getScriptOff(errorNum);
+          data = msg + ' (' + fileInfo[1] + ': line ' + fileInfo[0] + ')';
+        } else {
+          var fileInfo = getScriptOff(lineNumber);
+          data = msg + ' (' + fileInfo[1] + ': line ' + fileInfo[0] + ')';
+        }
+        window.parent.postMessage([{
+          log: [{
+            method: 'error',
+            data: [data],
+            id: Date.now().toString()
+          }],
+          source: fileInfo[1]
+        }], '*');
+      return false;
+    };
+  </script></head>
+  <body>
+    <script data-tag=&quot;@fs-sketch.js&quot;>class Color {
+  constructor(r, g, b) {
+    this.r = r;
+    this.g = g;
+    this.b = b;
+  }
+}
+
+let colors = [new Color(252, 186, 3), new Color(36, 182, 112), new Color(255, 82, 82), new Color(7, 85, 182), new Color(107, 31, 237), new Color(207, 70, 251)];
+
+class Circle {
+  
+  constructor() {
+    this.x = random(0, width);
+    this.y = random(0, height);
+    this.color = colors[floor(random(6))];
+    this.size = 0;
+  }
+  
+  update() {
+    if (this.size < 800) {
+      strokeWeight(0);
+      fill(this.color.r, this.color.g, this.color.b, 200);
+      circle(this.x, this.y, this.size++);
+    }
+  }
+}
+
+let size = 0;
+let circles = [];
+
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+  let c = new Circle();
+  if (random(10) > 9) {
+    circles[size++] = c;
+  }
+  
+  for (let i = 0; i < size; i++) {
+    circles[i].update();
+  }
+  
+  if (size > 60) {
+    circles.shift();
+    size--;
+  }
+}
+</script>
+  
+
+</body></html>" frameborder="0"></iframe>
 	</div>
 
 	<footer class="less-height">
