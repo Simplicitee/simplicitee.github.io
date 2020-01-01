@@ -10,8 +10,8 @@ let colors = [new Color(252, 186, 3), new Color(36, 182, 112), new Color(255, 82
 
 class Circle {
   constructor() {
-    this.x = random(0, width);
-    this.y = random(0, height);
+    this.x = random(width);
+    this.y = random(height);
     this.color = colors[floor(random(6))];
     this.size = 0;
   }
