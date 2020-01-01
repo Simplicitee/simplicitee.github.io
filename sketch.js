@@ -29,7 +29,7 @@ let size = 0;
 let circles = [];
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(3000, 3000);
 }
 
 function draw() {
