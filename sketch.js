@@ -25,7 +25,6 @@ class Circle {
   }
 }
 
-let size = 0;
 let circles = [];
 
 function setup() {
@@ -39,12 +38,11 @@ function draw() {
     circles.push(c);
   }
   
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i < circles.length; i++) {
     circles[i].update();
   }
   
-  if (size > 100) {
+  if (circles.length > 100) {
     circles.shift();
-    size--;
   }
 }
