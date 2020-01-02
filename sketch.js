@@ -17,7 +17,7 @@ class Circle {
   }
   
   update() {
-    if (this.size < 800) {
+    if (this.size < 1000) {
       strokeWeight(0);
       fill(this.color.r, this.color.g, this.color.b, 200);
       circle(this.x, this.y, this.size++);
