@@ -25,7 +25,7 @@ function draw() {
     q.insert(p);
   }
   
-  q.show();
+  //q.show();
   
   for (let p of ps) {
     let found = [];
