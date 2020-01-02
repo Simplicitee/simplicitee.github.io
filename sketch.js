@@ -29,21 +29,21 @@ let size = 0;
 let circles = [];
 
 function setup() {
-  createCanvas(screen.width, screen.height);
+  createCanvas(screen.width - 100, screen.height - 400);
 }
 
 function draw() {
   background(0);
   let c = new Circle();
   if (random(10) > 9) {
-    circles[size++] = c;
+    circles.push(c);
   }
   
   for (let i = 0; i < size; i++) {
     circles[i].update();
   }
   
-  if (size > 60) {
+  if (size > 100) {
     circles.shift();
     size--;
   }
