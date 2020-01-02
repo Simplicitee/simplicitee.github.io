@@ -42,7 +42,7 @@ function draw() {
     circles[i].update();
   }
   
-  if (circles.length > 100) {
+  if (circles.length > 150) {
     circles.shift();
   }
 }
