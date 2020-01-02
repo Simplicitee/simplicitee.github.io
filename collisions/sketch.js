@@ -5,7 +5,7 @@ let b;
 let clickB = null;
 
 function setup() {
-  createCanvas(700, 700);
+  createCanvas(window.innerWidth, window.innerHeight);
   
   b = new Boundary(width / 2, height / 2, width / 2, height / 2);
   
